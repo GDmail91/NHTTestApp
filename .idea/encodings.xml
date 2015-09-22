@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/nht/nhttestapp/AddActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/nht/nhttestapp/ButtonAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/nht/nhttestapp/ButtonList.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/nht/nhttestapp/CounterSetting.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/nht/nhttestapp/SlidingTabLayout.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/org/nht/nhttestapp/SlidingTabStrip.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

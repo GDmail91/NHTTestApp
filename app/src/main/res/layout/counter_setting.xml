@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/counter_setting">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Counter Setting"
+        android:id="@+id/cnt_setting"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/cnt_setting"
+        android:layout_toEndOf="@+id/cnt_setting" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cnt_setting"
+        android:id="@+id/type_setting"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#3498DB">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Increase Type"
+            android:id="@+id/count_type"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plus Count"
+            android:id="@+id/plus_count"
+            android:textColor="#FFFFFF"
+            android:layout_toRightOf="@+id/count_type"
+            android:layout_toEndOf="@+id/count_type" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minus Count"
+            android:id="@+id/minus_count"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/plus_count"
+            android:layout_toRightOf="@+id/count_type"
+            android:layout_toEndOf="@+id/count_type" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="실행조건"
+        android:id="@+id/excute_time"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:background="#3498DB"
+        android:layout_alignTop="@+id/cnt_excute"
+        android:layout_alignBottom="@+id/cnt_excute"
+        android:layout_marginRight="15dp"
+        android:padding="5dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cnt_excute"
+        android:drawSelectorOnTop="true"
+        android:background="#222222"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/type_setting"
+        android:layout_alignRight="@+id/excute_time"
+        android:layout_toRightOf="@+id/excute_time"
+        android:layout_toEndOf="@+id/excute_time"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="종료설정"
+        android:id="@+id/end_time"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:background="#3498DB"
+        android:layout_alignTop="@+id/cnt_end"
+        android:layout_alignBottom="@+id/cnt_end"
+        android:layout_marginRight="15dp"
+        android:padding="5dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cnt_end"
+        android:drawSelectorOnTop="true"
+        android:background="#222222"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cnt_excute"
+        android:layout_alignRight="@+id/end_time"
+        android:layout_toRightOf="@+id/end_time"
+        android:layout_toEndOf="@+id/end_time"
+        android:layout_marginBottom="15dp"/>
+
+
+</RelativeLayout>

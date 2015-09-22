@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/counter_setting">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Alarm Setting"
+        android:id="@+id/cnt_setting"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/cnt_setting"
+        android:layout_toEndOf="@+id/cnt_setting" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cnt_setting"
+        android:id="@+id/type_setting"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#3498DB">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Alarm"
+            android:id="@+id/alarm_type"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="(선택안함)"
+            android:id="@+id/alarm"
+            android:textSize="15dp"
+            android:textColor="#DDDDDD"
+            android:layout_toRightOf="@id/alarm_type"
+            android:layout_alignBaseline="@id/alarm_type"
+            android:padding="5dp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/alarm_switch"
+            android:layout_alignBaseline="@id/alarm_type"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="실행조건"
+        android:id="@+id/excute_time"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:background="#3498DB"
+        android:layout_alignTop="@+id/cnt_excute"
+        android:layout_alignBottom="@+id/cnt_excute"
+        android:layout_marginRight="15dp"
+        android:padding="5dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cnt_excute"
+        android:drawSelectorOnTop="true"
+        android:background="#222222"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/type_setting"
+        android:layout_alignRight="@+id/excute_time"
+        android:layout_toRightOf="@+id/excute_time"
+        android:layout_toEndOf="@+id/excute_time"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="팝업 메세지"
+        android:id="@+id/textbox"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:background="#3498DB"
+        android:layout_below="@+id/cnt_excute"
+        android:layout_marginBottom="15dp"
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textbox"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />"/>
+
+
+</RelativeLayout>
